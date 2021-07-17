@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>CSS Parent Child</title>
+
+        <style>
+            p {
+                color: blue;
+            }
+
+            div p {
+                color: green;
+                font-size: 18px;
+            }
+/*this works*/
+            .div-with-class p{
+                color: purple;
+            }
+            /*but this wont work:*/
+            /* .div-with-class {
+                color: purple;
+            } */
+        </style>
+    </head>
+    <body>
+        <p>stand alone paragraph</p>
+
+        <div>
+            <p>paragraph inside a div</p>
+        </div>
+
+        <div class="div-with-class">
+            <p>paragraph inside div with claass</p>
+            <p class="paragraph-with-class"> paragraph inside div with a class</p>
+        </div>
+
+        <ul class="striped-odd">
+            <li> item 1</li>
+            <li> item 2</li>
+            <li> item 3</li>
+            <li> item 4</li>
+        </ul>
+
+        <ul class="striped-even">
+            <li> item 1</li>
+            <li> item 2</li>
+            <li> item 3</li>
+            <li> item 4</li>
+        </ul>
+
+
+        <ul class="first-child-border-bottom">
+            <li> item 1</li>
+            <li> item 2</li>
+            <li> item 3</li>
+            <li> item 4</li>
+        </ul>
+
+
+    </body>
+</html>
